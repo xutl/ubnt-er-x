@@ -45,11 +45,11 @@ install_kms()
 	#chowm root:root /usr/local/bin/vlmcsd
 	insserv -v -d $ETC_DIR/init.d/vlmcsd
 
-	echo "Install Complete."
 	echo "Starting Vlmcsd..."
 	/etc/init.d/vlmcsd start
 }
 
+init
 install_kms
 
 exit 0
